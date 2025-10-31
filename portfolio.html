@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Syed Saad Najam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header / Navigation Bar -->
+    <header>
+        <h1>Syed Saad Najam</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <!-- Greeting Section -->
+    <section id="home">
+        <h2 id="greeting"></h2>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="images/saad.jpeg" alt="Your Photo">
+            <p>Hello! I'm <strong>Syed Saad Najam</strong>, a passionate web developer who loves creating interactive
+                and responsive websites. I enjoy learning new technologies and turning ideas into digital reality.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="progress" data-skill="90"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="progress" data-skill="80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress" data-skill="75"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project" onclick="toggleProjectDetails('proj1')">
+                <h3>Portfolio Website</h3>
+                <p>Click to view details</p>
+                <div id="proj1" class="project-details">
+                    <p>A personal portfolio website built with HTML, CSS, and JavaScript showcasing my skills and
+                        projects.</p>
+                </div>
+            </div>
+
+            <div class="project" onclick="toggleProjectDetails('proj2')">
+                <h3>Todo App</h3>
+                <p>Click to view details</p>
+                <div id="proj2" class="project-details">
+                    <p>A simple and efficient Todo List application built using JavaScript to manage daily tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Syed Saad Najam | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
